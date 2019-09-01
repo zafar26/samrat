@@ -67,10 +67,12 @@ body, html {
 <!-- Header with full-height image 
 <header class="bgimg-1 w3-display-container " id="home" >-->
 <nav class="second">  
-
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
 <!--  <div class="w3-display-left w3-text-white" style="margin-top:-10%">
     -->
-    <ul>
+    <ul id="myTopnav">
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Insight</a>
             <div class="dropdown-content">
@@ -99,7 +101,8 @@ body, html {
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropbtn">Contact</a>
             <div class="dropdown-content">
-                <a href="#">Business</a>
+       
+              <a href="#">Business</a>
                 <a href="#">Blog</a>
                 <a href="faq.html">FAQ's</a>
             </div>
@@ -108,6 +111,9 @@ body, html {
             <a href = "open.html"><button class="button"> <span>Open Account</span></button></a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdg90cc1f2n-lae9zdLP7LbBVEqbmuK94850BOeOdVC0_VyA/viewform"><button class="button"><span>Financial Planing  </span></button></a>
         </li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
   </ul>
   </nav>
 
@@ -139,25 +145,31 @@ body, html {
   <p class="w3-center w3-large">Key features of our company</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
-      <i><img style="width:8vw;height:12vh;"src="financial.png"></i>
+      <i><img style="width:50px;height:50px;"src="financial.png"></i>
       <p class="w3-large">Financial Service</p>
       <p>Assuring financial goals for you by reducing financial complexity. Great guaranteed return along with expected return to fulfill your personal happiness and, by reducing saving risk.</p>
       <br>
       <br>
 
       <a class="btn" href="" >Start Saving</a>
+      <br>
+      <br>
+
     </div>
     <div class="w3-quarter">
-      <i><img style="width:8vw;height:12vh;"src="investment.png"></i>
+      <i><img style="width:50px;height:50px;"src="investment.png"></i>
      
       <p class="w3-large">Investment Management</p>
       <p>Investment service is designed to reach your organisation to next level of consumer eccentric brand. Strategy innovation and deep analysis for your business, to serve as the core value of organisation. </p>
       <br>
 
       <a class="btn" href="" >Explore</a>
+      <br>
+      <br>
+
     </div>
     <div class="w3-quarter">
-      <i><img style="width:8vw;height:12vh;"src="freedom.png"></i>
+      <i><img style="width:50px;height:50px;"src="freedom.png"></i>
       <p class="w3-large">Freedom Venture</p>
       <p>Nurture small businesses by encouraging the community inclusion with convenience investment. Amplifying the profitability of local and small investors who are passionate about product value.</p>
       <br>
@@ -165,13 +177,18 @@ body, html {
     
       <a class="btn" href="" >Supplier</a>
       <a class="btn" href="" >Investor</a>
+      <br>
+      <br>
     
     </div>
     <div class="w3-quarter">
-      <i><img style="width:8vw;height:12vh;"src="funding.png"></i>
+      <i><img style="width:50px;height:50px;"src="funding.png"></i>
       <p class="w3-large">Funding</p>
       <p>For those who actualise the imagination into reality. Working side by side with enthusiastic people, to provide financial, technical, human & research support to develop world-class companies. Discovering the problem solving ideas across globe.</p>
       <a class="btn"href="" >Support</a>
+      <br>
+      <br>
+
     </div>
   </div>
 </div>
@@ -266,7 +283,14 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "dropbtn") {
+    x.className += " responsive";
+  } else {
+    x.className = "dropbtn";
+  }
+}
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
