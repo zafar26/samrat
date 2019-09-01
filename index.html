@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<title>Samrat Finance Banking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./index.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+</style>
+<body style="background-color:#eae9e9">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top"style="background-color:#ffffc5">
+  <div class="w3-bar w3-white w3-card" id="myNavbar"style="background-color:#ffffc5">
+    <!-- Right-sided navbar links -->
+    <a href="#home" class="w3-bar-item w3-button w3-wide"style="font-size:30px; margin-top:-50px;color:red"><p><b>Samrat</b></p>
+      <a href="#home" class="w3-bar-item w3-button w3-wide"style="font-size:10px; margin-top:20px;margin-left:-160px; background-color:transparent; color:blue"><p>Financial Banking</p></a>
+    <div class="w3-right w3-hide-small"style="margin-top:3px; font-size:20px; font-weight:bold;">
+       
+      <a href="#investmentmanagement" class="w3-bar-item w3-button">Investment Management</a>
+      <a href="#consultant" class="w3-bar-item w3-button">Consultancy</a>
+      <a href="#saving" class="w3-bar-item w3-button">Saving</a>
+      <a href="#funding" class="w3-bar-item w3-button">Funding</a>
+      <a href="#contact" class="w3-bar-item w3-button"> Contact</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Investment Management</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Consultancy</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Saving</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Funding</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Header with full-height image 
+<header class="bgimg-1 w3-display-container " id="home" >-->
+<nav class="second">  
+
+<!--  <div class="w3-display-left w3-text-white" style="margin-top:-10%">
+    -->
+    <ul>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Insight</a>
+            <div class="dropdown-content">
+                <a href="#aboutus">About Us</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Global Services</a>
+            <div class="dropdown-content">
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Financial Services</a>
+            <div class="dropdown-content">
+                <a href="#piggy">Piggy Valley</a>
+                <a href="#">SamVan Lifetime Plan</a>
+                <a href="#">Student Growth Plan</a>
+                <a href="#">Global Growth Plan</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Pay Here</a>
+            <div class="dropdown-content">
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Contact</a>
+            <div class="dropdown-content">
+                <a href="#">Business</a>
+                <a href="#">Blog</a>
+                <a href="faq.html">FAQ's</a>
+            </div>
+        </li>
+        <li class="but">
+            <a href = "open.html"><button class="button"> <span>Open Account</span></button></a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdg90cc1f2n-lae9zdLP7LbBVEqbmuK94850BOeOdVC0_VyA/viewform"><button class="button"><span>Financial Planing  </span></button></a>
+        </li>
+  </ul>
+  </nav>
+
+  <div class="containered">
+            <img class="sim" src="samratinvestment.jpg">
+         <div class="centered">
+          <div class="front">  
+          <span class="w3-xxlarge w3-hide-small"style="text-shadow: 1px 1px #382039">Inspiring The Lives</span><br>
+            <span class="w3-jumbo "style="text-shadow: 3px 3px #382039">Global Service</span><br>
+            <span class="w3-large">Bring actual value and experience through multiple services;  we designed for you for your economic  development, commerce & ideas to work for you.</span>
+            <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+         </div>
+         </div>
+  </div>
+
+
+ <!-- <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>-->
+
+<!-- About Section -->
+<div id="aboutus"class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i><img style="width:8vw;height:12vh;"src="financial.png"></i>
+      <p class="w3-large">Financial Service</p>
+      <p>Assuring financial goals for you by reducing financial complexity. Great guaranteed return along with expected return to fulfill your personal happiness and, by reducing saving risk.</p>
+      <br>
+      <br>
+
+      <a class="btn" href="" >Start Saving</a>
+    </div>
+    <div class="w3-quarter">
+      <i><img style="width:8vw;height:12vh;"src="investment.png"></i>
+     
+      <p class="w3-large">Investment Management</p>
+      <p>Investment service is designed to reach your organisation to next level of consumer eccentric brand. Strategy innovation and deep analysis for your business, to serve as the core value of organisation. </p>
+      <br>
+
+      <a class="btn" href="" >Explore</a>
+    </div>
+    <div class="w3-quarter">
+      <i><img style="width:8vw;height:12vh;"src="freedom.png"></i>
+      <p class="w3-large">Freedom Venture</p>
+      <p>Nurture small businesses by encouraging the community inclusion with convenience investment. Amplifying the profitability of local and small investors who are passionate about product value.</p>
+      <br>
+      <br>
+    
+      <a class="btn" href="" >Supplier</a>
+      <a class="btn" href="" >Investor</a>
+    
+    </div>
+    <div class="w3-quarter">
+      <i><img style="width:8vw;height:12vh;"src="funding.png"></i>
+      <p class="w3-large">Funding</p>
+      <p>For those who actualise the imagination into reality. Working side by side with enthusiastic people, to provide financial, technical, human & research support to develop world-class companies. Discovering the problem solving ideas across globe.</p>
+      <a class="btn"href="" >Support</a>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3><b>Financial Consultancy.</b></h3>
+      <p>Insight on finance and authentic research about strategic management of individuals (You) and businesses, to accomplish your personal aspiration. A genius approach on your mark to serve you.</p>
+      <p><a class="btn" href="#work" class="w3-button w3-black">Consult Us</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="financialconsultancy.webp" alt="Financial" width="700" height="394">
+    </div>
+  </div>
+</div>
+<div id ="piggy" class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <img class="w3-image w3-round-large" src="tab.webp" alt="Financial" width="700" height="50">
+          </div>
+      <div class="w3-col m6">
+        <br>
+        <h3><b>Piggy valley</b></h3>
+        <p>The profitable and efficient personal savings to simplify your finance and double the Happiness.</p>
+        <p><b>Secure a family,<br> Achieve your dreams,<br> Educate your child,<br> Marriage the daughter you never wish to see off,<br>Aspiration to explore the life every moment and enjoy the retirement.</b></p>
+        <p><a class="btn" href="open.html" class="w3-button w3-black">Open Account</a>
+        <a class="btn" href="open.html" class="w3-button w3-black">Pay Here</a></p>
+      </div>
+      
+    </div>
+  </div>
+  
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center w3-large">We Are Here To Help You:</p>
+  <div style="margin-top:48px">
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+<div class="about">
+ 
+  <h3>About</h3>
+  <a href="" >Contact us </a><br>
+  <a href="" >Global Community</a><br>
+  <a href="" >Short-term saving</a><br>
+  <a href="" >Long-term saving</a><br>
+  <a href="" >For students</a><br>
+</div>
+<div class="about">
+
+  <h3 >Services</h3>
+  <a href="" > Financial Consultancy</a><br>
+  <a href="" >Funding</a><br>
+  <a href="" >Investment Management</a><br>
+  <a href="" >New user</a><br>
+  <a href="" >Advertise</a>
+</div>
+
+
+
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Created by <a href="https://qutubuddinzafar.netlify.com" title="zafar"  class="w3-hover-text-green">Zafar</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
