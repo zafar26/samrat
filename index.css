@@ -5,7 +5,9 @@ ul {
   overflow: hidden;
   background-color: #207561;
 }
-
+.myTopnav{
+  height:5px;
+}
 li {
   
   float: left;
@@ -50,7 +52,6 @@ li.dropdown {
   display: block;
 }
 .second {
-    
     margin-top:90px;
 }
 li {
@@ -138,8 +139,9 @@ li {
   color: white;
 }
 .front {
-  background-color:#2c003e;
-  color:#e0e0e0;
+  padding:30px;
+  background-color:#e6e6e6;
+  color:#042f4b;
 }
 
 
